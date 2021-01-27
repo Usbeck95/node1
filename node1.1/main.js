@@ -18,7 +18,8 @@ console.log(`The server has started and is listening on port number:
 
 const readline = require('readline-sync');
 
-function Userid(name, email) {
+function User(userid, name, email) {
+    this.userid = userid;
     this.name = name;
     this.email = email;
 }
