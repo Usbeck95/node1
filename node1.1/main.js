@@ -17,6 +17,12 @@ console.log(`The server has started and is listening on port number:
 ➥ ${port}`);
 
 const readline = require('readline-sync');
+
+function Userid(name, email) {
+    this.name = name;
+    this.email = email;
+}
+
 let name = readline.question("Enter name: ");
 let email = readline.question("Enter email: ");
 
@@ -28,3 +34,10 @@ if (typeof name !== undefined && typeof email !== undefined) {
     console.log(`Hi ${name} your mail is ${email}`);
 }
 
+let userid = readline.question("Enter a userid:");
+
+if (typeof userid === typeof userid) {
+    console.log("That userid is already taken, plz insert new");
+} else {
+    console.log('')
+}
